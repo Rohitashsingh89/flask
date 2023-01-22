@@ -1,5 +1,5 @@
 {% extends "base.html" %} 
-{% block title %}Home {% endblock %}
+{% block title %}Update {% endblock %}
 {% block body %} 
 
     <div class="headsec sticky">
@@ -16,10 +16,10 @@
                         <a href="/about">About</a>
                     </li>
                     <!-- <li class="right bodonhover">
-                        <a href="/blog">Blog</a>
+                        <a href="/">Blog</a>
                     </li> -->
                     <!-- <li class="right bodonhover">
-                        <a href="/contact">Contact Us</a>
+                        <a href="/portfolio/portfolio 2.0/template/contact.html">Contact Us</a>
                     </li> -->
                 </ul>
                 <!-- <div class="loginbtn">
@@ -33,18 +33,18 @@
     <div class="container mx-auto">
         <div class="content mx-auto">
             <div class="form">
-                <form action="/" method="POST">
+                <form action="/update/{{todo.sno}}" method="POST">
                     <div class="formcontainer">
                         <p class="">Task</p>
-                        <input type="text" name="title" id="title" class="inputbox my ">
+                        <input type="text" name="title" id="title" class="inputbox my " value="{{todo.title}}">
                         <p class="">Description </p>
-                        <input type="text" name="desc" id="desc" class="inputbox my">
+                        <input type="text" name="desc" id="desc" class="inputbox my" value="{{todo.desc}}">
                         <button type="submit" class="btn mx-half">Submit</button>
                         <!-- <input type="submit" value="Submit" name="submit" id="submit" class="btn mx"> -->
 
-                        <div class="show mx inputbox">
+                        <!-- <div class="show mx inputbox"> -->
 
-                            <div class="container">
+                            <!-- <div class="container">
                                 <h1 class="my">Your Todos</h1>
 
                                 {% if alltodo|length == 0 %}
@@ -71,18 +71,16 @@
                                                     <td>{{todo.desc}}</td>
                                                     <td>{{todo.date_created}}</td>
                                                     <td>
-                                                        <div class="btn2">
-                                                            <a href="update/{{todo.sno}}" type="button" class="btn "> Update</a>
-                                                            <a href="delete/{{todo.sno}}" type="button" class="btn "> Delete</a>
-                                                        </div>
+                                                        <a href="update/{{todo.sno}}" type="button" class="btn "> Update</a>
+                                                        <a href="delete/{{todo.sno}}" type="button" class="btn "> Delete</a>
                                                     </td>
                                                 </tr>
                                                 {% endfor %}
                                             </tbody>
                                         </table>
                                             {% endif %}
-                            </div>
-                        </div>
+                            </div> -->
+                        <!-- </div> -->
                     </div>
                 </form>
             </div>
