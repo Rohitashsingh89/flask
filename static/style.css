@@ -1,1 +1,187 @@
-knp
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 15pt;
+    text-decoration: none;
+}
+.logo{
+    padding:0 2rem;
+    padding-top: 0.6rem;
+    width: 100%;
+    color: rgb(29, 29, 210);
+    align-items: center;
+}
+.righthead{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.righthead ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.3rem;
+}
+a{
+    text-decoration: none;
+}
+.right{
+    list-style: none;
+    margin: 0.7rem;
+}
+.bodonhover:hover{
+    cursor: pointer;
+    border-bottom: 2px solid blue;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: black;
+  }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  line-height: 2;
+  color: black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.loginbtn{
+    margin: 0.5rem;
+    margin-right: 2rem;
+}
+.btn{
+    display: inline-flex;
+    color: white;
+    border-radius: 4px;
+    background-color: rgb(29, 29, 210);
+    padding: 8px;
+    margin:0 0.5rem;
+    border: 0px solid aliceblue;
+    justify-content: center;
+}
+.btn2{
+    width: 25vw;
+}
+.box1{
+    width: 100%;
+    height: 4rem;
+    padding: 1.3rem;
+    background-color: gray;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(79, 79, 178);
+}
+.content{
+    width: 100%;
+    padding: 10px;
+    margin: 0 20px 20px 0;
+    background-color: aliceblue; 
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.sticky1{
+    position: sticky;
+    top: 5rem;
+    background-color: white;
+}
+.btn{
+    margin: 0;
+}
+.headsec{
+    z-index: 1;
+    background-color: white;
+    height: 5.5rem;
+}
+.navbar{
+    z-index: 1;
+    top: 6.4rem;
+}
+.m-auto{
+    margin: auto;
+}
+.inputbox{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 20px;
+}
+.mx{
+    margin-top: 1rem;
+}
+.mx-half{
+    margin-top: 0.5rem;
+}
+.my{
+    margin-bottom: 1rem;
+}
+.formcontainer{
+    margin: auto;
+    width: 60%;
+    padding-top: 10vh;
+    min-height: 100vh;
+    font-size: 20pt;
+}
+.content{
+    min-height: 100vh;
+}
+.pointer{
+    cursor: pointer;
+}
+.p-l{
+    padding-left: 1rem;
+}
+.m-l{
+    margin-left: 1rem;
+}
+.bg{
+    background-color: white;
+    color: black;
+}
+.table{
+    width: 100%;
+    margin-bottom: 4rem;
+}
+.border{
+    border: 1px solid black;
+    table-layout:fixed;
+}
+.loginfooter{
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    text-align: center;   
+    font-size: 20pt;
+    padding-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .formcontainer {
+        width: 100%;
+        padding: 1rem;
+    }
+    .loginfooter{
+        height: 4rem;
+    }
+    .btn2{
+        width: 10vh;
+        padding: 5px;
+        margin: 4px;
+    
+    }
+}
